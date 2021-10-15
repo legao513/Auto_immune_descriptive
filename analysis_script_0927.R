@@ -149,7 +149,7 @@ dis_code <- list(c("Thrombocytopenia","^287.[345]|^279.12|^283.11|^284.1|^446.6|
                  c("Acute aseptic arthritis","^274.0|^696.0|^716.[569]|^712|^711.5"),
                  c("Acute disseminated encephalomyelitis","^323.6|^323.8"),
                  c("Anti-phospholipid antibody syndrome","^795.79|^286.5|^289.8|^D68.61"),
-                 c("Guillain-Barré syndrome","^357.0|^357.8|^357.9"),
+                 c("Guillain-BarrÃ© syndrome","^357.0|^357.8|^357.9"),
                  c("Kawasaki disease","^446.1"),
                  c("Narcolepsy","^347|^307.4|^780.5"),
                  c("Narcolepsy1","^347"),
@@ -379,7 +379,7 @@ dis_code1 <- list(c("Thrombocytopenia","^287.[345]|^279.12|^283.11|^284.1|^446.6
                   c("Acute disseminated encephalomyelitis","^323.6|^323.8"),
                   c("Anti-phospholipid antibody syndrome","^795.79|^286.5|^289.8|^D68.61"),
                   c("Death","Death date"),
-                  c("Guillain-Barré syndrome","^357.0|^357.8|^357.9"),
+                  c("Guillain-BarrÃ© syndrome","^357.0|^357.8|^357.9"),
                   c("Kawasaki disease","^446.1"),
                   c("Narcolepsy","^347|^307.4|^780.5"),
                   c("Narcolepsy1","^347"),
@@ -711,7 +711,7 @@ setDT(hist_case_ci)
 hist_case_ci1 <- hist_case_ci %>% 
   filter(disease %in% c("(Idiopathic) Thrombocytopenia","Acute aseptic arthritis",
                         "Acute disseminated encephalomyelitis","Anti-phospholipid antibody syndrome",
-                        "Guillain-Barré syndrome","Kawasaki disease",
+                        "Guillain-BarrÃ© syndrome","Kawasaki disease",
                         "Narcolepsy all","Psoriatic arthritis all",
                         "Reactive arthritis all","Rheumatoid arthritis all",
                         "Single organ cutaneous vasculitis",
@@ -733,7 +733,7 @@ plot_code <- list(c("^Kawasaki disease|^Single organ cutaneous vasculitis","Card
                   c("^Anti-phospholipid antibody syndrome|^Thrombocytopenia","Haematological system"),
                   c("^Sjogren's syndrome|^Systemic lupus erythematosus","Multisystem"),
                   c("^Acute aseptic arthritis|^Reactive arthritis|^Rheumatoid arthritis|^Psoriatic arthritis|^Spondyloarthritis","Musculoskeletal system"),
-                  c("^Acute disseminated encephalomyelitis|^Guillain-Barré syndrome|^Narcolepsy and related disorders|^Transverse myelitis","Nervous system"))
+                  c("^Acute disseminated encephalomyelitis|^Guillain-BarrÃ© syndrome|^Narcolepsy and related disorders|^Transverse myelitis","Nervous system"))
 
 hist_case_ci1 <- hist_case_ci1 %>% 
   mutate(year=as.factor(year))# if need to change x label name, then need to be factor
